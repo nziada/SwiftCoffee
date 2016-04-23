@@ -15,6 +15,7 @@
 		215388FD1CC725BC00FF8477 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 215388FB1CC725BC00FF8477 /* LaunchScreen.storyboard */; };
 		215389081CC725BC00FF8477 /* SwiftCoffeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215389071CC725BC00FF8477 /* SwiftCoffeeTests.swift */; };
 		215389131CC725BC00FF8477 /* SwiftCoffeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215389121CC725BC00FF8477 /* SwiftCoffeeUITests.swift */; };
+		21BFB53A1CC9C3DA000D28C6 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BFB5391CC9C3DA000D28C6 /* PageViewController.swift */; };
 		909C41DD73CBAADF6240819A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564D7B36C0AF66D01F9674BF /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		2153890E1CC725BC00FF8477 /* SwiftCoffeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCoffeeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		215389121CC725BC00FF8477 /* SwiftCoffeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCoffeeUITests.swift; sourceTree = "<group>"; };
 		215389141CC725BC00FF8477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21BFB5391CC9C3DA000D28C6 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		4655181910D72730BA664EAD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		564D7B36C0AF66D01F9674BF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E55C44DABD399D7544E14B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				215388FB1CC725BC00FF8477 /* LaunchScreen.storyboard */,
 				215388FE1CC725BC00FF8477 /* Info.plist */,
 				214983721CC7292B00ACB842 /* Venue.swift */,
+				21BFB5391CC9C3DA000D28C6 /* PageViewController.swift */,
 			);
 			path = SwiftCoffee;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				TargetAttributes = {
 					215388EE1CC725BC00FF8477 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 5C4NHQ6EZ2;
 					};
 					215389021CC725BC00FF8477 = {
 						CreatedOnToolsVersion = 7.3;
@@ -337,6 +341,7 @@
 				215388F51CC725BC00FF8477 /* ViewController.swift in Sources */,
 				214983731CC7292B00ACB842 /* Venue.swift in Sources */,
 				215388F31CC725BC00FF8477 /* AppDelegate.swift in Sources */,
+				21BFB53A1CC9C3DA000D28C6 /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,10 +484,13 @@
 			baseConfigurationReference = 4655181910D72730BA664EAD /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SwiftCoffee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nz.SwiftCoffee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -491,10 +499,13 @@
 			baseConfigurationReference = 64E55C44DABD399D7544E14B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SwiftCoffee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nz.SwiftCoffee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

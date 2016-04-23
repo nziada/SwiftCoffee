@@ -28,8 +28,16 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
         self.map.showsUserLocation = true
         
-        getPlacesFromFoursquare(locationManager.location!)
+    }
+    
+    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            
+            if swipeGesture.direction == UISwipeGestureRecognizerDirection.Left {
+                print("Swiped left")
 
+            }
+        }
     }
     
     func getPlacesFromFoursquare(location: CLLocation){
@@ -99,6 +107,9 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         let location = locations.last
         
         print("present location : \(location!.coordinate.latitude), \(location!.coordinate.longitude)")
+        if let loc = locationManager.location {
+            getPlacesFromFoursquare(loc)
+        }
         
         let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03))
