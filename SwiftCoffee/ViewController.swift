@@ -15,8 +15,9 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
 
     @IBOutlet weak var map: MKMapView!
     let locationManager = CLLocationManager()
-    
+    var lastLocation: CLLocation!
     var venus = [Venue]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,19 +29,15 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
         self.map.showsUserLocation = true
         
-    }
-    
-    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
-        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
-            
-            if swipeGesture.direction == UISwipeGestureRecognizerDirection.Left {
-                print("Swiped left")
-
-            }
+        if let loc = locationManager.location {
+            print("1. present location : \(loc.coordinate.latitude), \(loc.coordinate.longitude)")
+            self.lastLocation = loc
+            getPlacesFromFoursquare(loc)
         }
     }
     
     func getPlacesFromFoursquare(location: CLLocation){
+        print("about to call foursquare explore endpoint")
         
         let ll = "\(location.coordinate.latitude),\(location.coordinate.longitude)"
 
@@ -71,6 +68,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                     let items = responseData as! [[String:AnyObject]]
                     var index = 0
                     for _ in items {
+                        let id = json["response"]["groups"][0]["items"][index]["venue"]["id"].stringValue
                         let name = json["response"]["groups"][0]["items"][index]["venue"]["name"].stringValue
                         var address = "n/a"
                         if json["response"]["groups"][0]["items"][index]["venue"]["location"]["address"].exists(){
@@ -80,10 +78,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                         if json["response"]["groups"][0]["items"][index]["venue"]["location"]["city"].exists(){
                             city = json["response"]["groups"][0]["items"][index]["venue"]["location"]["city"].stringValue
                         }
-                        let distance = json["response"]["groups"][0]["items"][index]["venue"]["location"]["distance"].doubleValue
+                        let distance = json["response"]["groups"][0]["items"][index]["venue"]["location"]["distance"].intValue
                         let lat = json["response"]["groups"][0]["items"][index]["venue"]["location"]["lat"].doubleValue
                         let lng = json["response"]["groups"][0]["items"][index]["venue"]["location"]["lng"].doubleValue
-                        let venue = Venue(name: name, address: address, city: city, distance: distance, lat: lat, lng: lng)
+                        let venue = Venue(id: id, name: name, address: address, city: city, distance: distance, lat: lat, lng: lng)
                         self.venus.append(venue!)
                         index += 1
                     }
@@ -108,9 +106,12 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
         let location = locations.last
         
-        print("present location : \(location!.coordinate.latitude), \(location!.coordinate.longitude)")
-        if let loc = locationManager.location {
-            getPlacesFromFoursquare(loc)
+        if let loc = locations.last {
+            print("2. present location : \(loc.coordinate.latitude), \(loc.coordinate.longitude)")
+            if loc.distanceFromLocation(lastLocation) > 1000 {
+                getPlacesFromFoursquare(loc)
+            }
+            self.lastLocation = loc
         }
         
         let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
@@ -118,9 +119,6 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
         self.map.setRegion(region, animated: true)
         self.locationManager.stopUpdatingLocation()
-        
-        
-
     }
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError){

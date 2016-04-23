@@ -21,6 +21,7 @@ class FoursquarePlaces {
     }
     
     class func updatePlaces(inputArray:Array<Venue>) {
+        self.places.removeAll()
         self.places = inputArray
     }
 }

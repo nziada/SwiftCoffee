@@ -10,18 +10,20 @@ import Foundation
 
 class Venue {
     
+    var id: String
     var name: String
     var address: String
     var city: String
-    var distance: Double
+    var distance: Int
     var lat: Double
     var lng: Double
     
     // MARK: Initialization
     
-    init?(name: String, address: String, city: String, distance: Double, lat: Double, lng: Double) {
+    init?(id:String, name: String, address: String, city: String, distance: Int, lat: Double, lng: Double) {
         
         // Initialize stored properties.
+        self.id = id
         self.name = name
         self.address = address
         self.city = city
