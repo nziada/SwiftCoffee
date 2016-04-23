@@ -90,7 +90,9 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                 }
             }
             
-            for v in self.venus {
+            FoursquarePlaces.updatePlaces(self.venus)
+            
+            for v in FoursquarePlaces.getPlaces() {
                 let annotation = MKPointAnnotation()
                 annotation.coordinate = CLLocation(latitude: v.lat, longitude: v.lng).coordinate
                 annotation.title = v.name

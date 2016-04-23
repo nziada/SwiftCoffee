@@ -12,10 +12,10 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource {
 
     private(set) lazy var orderedViewControllers: [UIViewController] = {
         
-        let tableView = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("tableView")
         let mapView = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("mapView")
+        let tableView = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("tableView")
         
-        return [tableView, mapView]
+        return [mapView, tableView]
     }()
     
     override func viewDidLoad() {
