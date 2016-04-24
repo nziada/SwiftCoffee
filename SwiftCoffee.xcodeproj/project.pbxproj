@@ -18,6 +18,8 @@
 		21BC79461CCB127F00355158 /* FoursquarePlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC79451CCB127F00355158 /* FoursquarePlaces.swift */; };
 		21BC794A1CCB161400355158 /* CoffeeShopTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC79491CCB161400355158 /* CoffeeShopTableCell.swift */; };
 		21BC79501CCB1A8000355158 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC794F1CCB1A8000355158 /* TableViewController.swift */; };
+		21BC79531CCBEB2900355158 /* Near Me Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 21BC79511CCBEB2900355158 /* Near Me Filled.png */; };
+		21BC79541CCBEB2900355158 /* Restart Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 21BC79521CCBEB2900355158 /* Restart Filled.png */; };
 		21BFB53A1CC9C3DA000D28C6 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BFB5391CC9C3DA000D28C6 /* PageViewController.swift */; };
 		909C41DD73CBAADF6240819A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564D7B36C0AF66D01F9674BF /* Pods.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +59,8 @@
 		21BC79451CCB127F00355158 /* FoursquarePlaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquarePlaces.swift; sourceTree = "<group>"; };
 		21BC79491CCB161400355158 /* CoffeeShopTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeShopTableCell.swift; sourceTree = "<group>"; };
 		21BC794F1CCB1A8000355158 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		21BC79511CCBEB2900355158 /* Near Me Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Near Me Filled.png"; sourceTree = "<group>"; };
+		21BC79521CCBEB2900355158 /* Restart Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Restart Filled.png"; sourceTree = "<group>"; };
 		21BFB5391CC9C3DA000D28C6 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		4655181910D72730BA664EAD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		564D7B36C0AF66D01F9674BF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +118,8 @@
 		215388F11CC725BC00FF8477 /* SwiftCoffee */ = {
 			isa = PBXGroup;
 			children = (
+				21BC79511CCBEB2900355158 /* Near Me Filled.png */,
+				21BC79521CCBEB2900355158 /* Restart Filled.png */,
 				215388F21CC725BC00FF8477 /* AppDelegate.swift */,
 				215388FB1CC725BC00FF8477 /* LaunchScreen.storyboard */,
 				215388F61CC725BC00FF8477 /* Main.storyboard */,
@@ -273,7 +279,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				215388FD1CC725BC00FF8477 /* LaunchScreen.storyboard in Resources */,
+				21BC79531CCBEB2900355158 /* Near Me Filled.png in Resources */,
 				215388FA1CC725BC00FF8477 /* Assets.xcassets in Resources */,
+				21BC79541CCBEB2900355158 /* Restart Filled.png in Resources */,
 				215388F81CC725BC00FF8477 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

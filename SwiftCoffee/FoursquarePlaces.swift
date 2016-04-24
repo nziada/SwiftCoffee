@@ -8,6 +8,7 @@
 
 import Foundation
 
+//Singelton to keep venues 
 class FoursquarePlaces {
     
     static let sharedInstance = FoursquarePlaces()

@@ -18,6 +18,8 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     var lastLocation: CLLocation!
     var venus = [Venue]()
     
+    @IBOutlet weak var refreshButton: UIButton!
+    @IBOutlet weak var CurrentLocationButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +30,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         self.locationManager.startUpdatingLocation()
         
         self.map.showsUserLocation = true
+        self.map.setUserTrackingMode(MKUserTrackingMode.Follow, animated: true)
         
         if let loc = locationManager.location {
             print("1. present location : \(loc.coordinate.latitude), \(loc.coordinate.longitude)")
@@ -48,7 +51,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             "ll": "\(ll)",
             "v": "20160416",
             "section": "coffee",
-            "radius": "2000"
+            "radius": "5000"
         ]
         
         Alamofire.request(.GET, url, parameters: parameters).responseJSON { response in
@@ -108,9 +111,14 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
         if let loc = locations.last {
             print("2. present location : \(loc.coordinate.latitude), \(loc.coordinate.longitude)")
-            if loc.distanceFromLocation(lastLocation) > 1000 {
+            if let last = lastLocation {
+                if loc.distanceFromLocation(last) > 1000 {
+                    getPlacesFromFoursquare(loc)
+                }
+            } else {
                 getPlacesFromFoursquare(loc)
             }
+
             self.lastLocation = loc
         }
         
@@ -129,7 +137,21 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func showCurrentPosition(sender: AnyObject) {
+        if let location = locationManager.location {
+            let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+            let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03))
+            
+            self.map.setRegion(region, animated: true)
+        }
+    }
+    
+    @IBAction func refreshAction(sender: AnyObject) {
+        if let location = locationManager.location {
+            getPlacesFromFoursquare(location)
+        }
+    }
 
 }
 
