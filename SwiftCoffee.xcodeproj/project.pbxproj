@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185935C33AD392C467F7AC18 /* Pods_SwiftCoffee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4322EC7A4A29D0BC265BBC78 /* Pods_SwiftCoffee.framework */; };
+		2124DF4C1CCDBE57009925AC /* FakeFoursquareApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2124DF4B1CCDBE57009925AC /* FakeFoursquareApi.swift */; };
 		214983731CC7292B00ACB842 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214983721CC7292B00ACB842 /* Venue.swift */; };
 		215388F31CC725BC00FF8477 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215388F21CC725BC00FF8477 /* AppDelegate.swift */; };
 		215388F51CC725BC00FF8477 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215388F41CC725BC00FF8477 /* ViewController.swift */; };
@@ -20,7 +22,11 @@
 		21BC79501CCB1A8000355158 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC794F1CCB1A8000355158 /* TableViewController.swift */; };
 		21BC79531CCBEB2900355158 /* Near Me Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 21BC79511CCBEB2900355158 /* Near Me Filled.png */; };
 		21BC79541CCBEB2900355158 /* Restart Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 21BC79521CCBEB2900355158 /* Restart Filled.png */; };
+		21BC79561CCD2DD200355158 /* PageViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC79551CCD2DD200355158 /* PageViewControllerTest.swift */; };
+		21BC79581CCD31D800355158 /* MapViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC79571CCD31D800355158 /* MapViewControllerTest.swift */; };
 		21BFB53A1CC9C3DA000D28C6 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BFB5391CC9C3DA000D28C6 /* PageViewController.swift */; };
+		21BFB8331CCD406E00680D84 /* FoursquareApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BFB8321CCD406E00680D84 /* FoursquareApi.swift */; };
+		361D6D52C03D4E086EA94C85 /* Pods_SwiftCoffeeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9248DEA90141D2EF2CA4CE08 /* Pods_SwiftCoffeeTests.framework */; };
 		909C41DD73CBAADF6240819A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564D7B36C0AF66D01F9674BF /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2124DF4B1CCDBE57009925AC /* FakeFoursquareApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeFoursquareApi.swift; sourceTree = "<group>"; };
 		214983721CC7292B00ACB842 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		215388EF1CC725BC00FF8477 /* SwiftCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		215388F21CC725BC00FF8477 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,10 +68,19 @@
 		21BC794F1CCB1A8000355158 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		21BC79511CCBEB2900355158 /* Near Me Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Near Me Filled.png"; sourceTree = "<group>"; };
 		21BC79521CCBEB2900355158 /* Restart Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Restart Filled.png"; sourceTree = "<group>"; };
+		21BC79551CCD2DD200355158 /* PageViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewControllerTest.swift; sourceTree = "<group>"; };
+		21BC79571CCD31D800355158 /* MapViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewControllerTest.swift; sourceTree = "<group>"; };
 		21BFB5391CC9C3DA000D28C6 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		21BFB8321CCD406E00680D84 /* FoursquareApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareApi.swift; sourceTree = "<group>"; };
+		40155196A62148B8598E95DB /* Pods-SwiftCoffeeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCoffeeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCoffeeTests/Pods-SwiftCoffeeTests.release.xcconfig"; sourceTree = "<group>"; };
+		4322EC7A4A29D0BC265BBC78 /* Pods_SwiftCoffee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftCoffee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4655181910D72730BA664EAD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		564D7B36C0AF66D01F9674BF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E55C44DABD399D7544E14B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		767786626CCA57A70E55DE88 /* Pods-SwiftCoffeeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCoffeeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCoffeeTests/Pods-SwiftCoffeeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B6A0F412F8D07BA1BC1FE75 /* Pods-SwiftCoffee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCoffee.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCoffee/Pods-SwiftCoffee.release.xcconfig"; sourceTree = "<group>"; };
+		9248DEA90141D2EF2CA4CE08 /* Pods_SwiftCoffeeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftCoffeeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB19BFF489FD3316A5BC949C /* Pods-SwiftCoffee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCoffee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCoffee/Pods-SwiftCoffee.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				909C41DD73CBAADF6240819A /* Pods.framework in Frameworks */,
+				185935C33AD392C467F7AC18 /* Pods_SwiftCoffee.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				361D6D52C03D4E086EA94C85 /* Pods_SwiftCoffeeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +111,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2124DF4A1CCDBE32009925AC /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				2124DF4B1CCDBE57009925AC /* FakeFoursquareApi.swift */,
+			);
+			name = Fakes;
+			sourceTree = "<group>";
+		};
 		215388E61CC725BC00FF8477 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +157,8 @@
 				21BC79491CCB161400355158 /* CoffeeShopTableCell.swift */,
 				21BC79451CCB127F00355158 /* FoursquarePlaces.swift */,
 				214983721CC7292B00ACB842 /* Venue.swift */,
+				21BFB8321CCD406E00680D84 /* FoursquareApi.swift */,
+				2124DF4A1CCDBE32009925AC /* Fakes */,
 			);
 			path = SwiftCoffee;
 			sourceTree = "<group>";
@@ -139,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				215389071CC725BC00FF8477 /* SwiftCoffeeTests.swift */,
+				21BC79571CCD31D800355158 /* MapViewControllerTest.swift */,
+				21BC79551CCD2DD200355158 /* PageViewControllerTest.swift */,
 				215389091CC725BC00FF8477 /* Info.plist */,
 			);
 			path = SwiftCoffeeTests;
@@ -157,6 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				564D7B36C0AF66D01F9674BF /* Pods.framework */,
+				4322EC7A4A29D0BC265BBC78 /* Pods_SwiftCoffee.framework */,
+				9248DEA90141D2EF2CA4CE08 /* Pods_SwiftCoffeeTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -166,6 +198,10 @@
 			children = (
 				4655181910D72730BA664EAD /* Pods.debug.xcconfig */,
 				64E55C44DABD399D7544E14B /* Pods.release.xcconfig */,
+				767786626CCA57A70E55DE88 /* Pods-SwiftCoffeeTests.debug.xcconfig */,
+				40155196A62148B8598E95DB /* Pods-SwiftCoffeeTests.release.xcconfig */,
+				BB19BFF489FD3316A5BC949C /* Pods-SwiftCoffee.debug.xcconfig */,
+				8B6A0F412F8D07BA1BC1FE75 /* Pods-SwiftCoffee.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -197,9 +233,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2153891A1CC725BC00FF8477 /* Build configuration list for PBXNativeTarget "SwiftCoffeeTests" */;
 			buildPhases = (
+				BEDA9EC37BCF06B753506777 /* Check Pods Manifest.lock */,
 				215388FF1CC725BC00FF8477 /* Sources */,
 				215389001CC725BC00FF8477 /* Frameworks */,
 				215389011CC725BC00FF8477 /* Resources */,
+				BA44C6BC8DD3049CB2EFAF63 /* Embed Pods Frameworks */,
+				1C6A9DCE38FCA29CAB3CAAD5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -315,10 +354,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftCoffee/Pods-SwiftCoffee-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C6A9DCE38FCA29CAB3CAAD5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftCoffeeTests/Pods-SwiftCoffeeTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		419DC37488C564CFAE5321EB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BA44C6BC8DD3049CB2EFAF63 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftCoffeeTests/Pods-SwiftCoffeeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEDA9EC37BCF06B753506777 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -345,7 +429,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftCoffee/Pods-SwiftCoffee-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -360,8 +444,10 @@
 				214983731CC7292B00ACB842 /* Venue.swift in Sources */,
 				21BC794A1CCB161400355158 /* CoffeeShopTableCell.swift in Sources */,
 				215388F31CC725BC00FF8477 /* AppDelegate.swift in Sources */,
+				21BFB8331CCD406E00680D84 /* FoursquareApi.swift in Sources */,
 				21BC79461CCB127F00355158 /* FoursquarePlaces.swift in Sources */,
 				21BFB53A1CC9C3DA000D28C6 /* PageViewController.swift in Sources */,
+				2124DF4C1CCDBE57009925AC /* FakeFoursquareApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +455,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21BC79581CCD31D800355158 /* MapViewControllerTest.swift in Sources */,
 				215389081CC725BC00FF8477 /* SwiftCoffeeTests.swift in Sources */,
+				21BC79561CCD2DD200355158 /* PageViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,7 +589,7 @@
 		};
 		215389181CC725BC00FF8477 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4655181910D72730BA664EAD /* Pods.debug.xcconfig */;
+			baseConfigurationReference = BB19BFF489FD3316A5BC949C /* Pods-SwiftCoffee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -516,7 +604,7 @@
 		};
 		215389191CC725BC00FF8477 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64E55C44DABD399D7544E14B /* Pods.release.xcconfig */;
+			baseConfigurationReference = 8B6A0F412F8D07BA1BC1FE75 /* Pods-SwiftCoffee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -531,6 +619,7 @@
 		};
 		2153891B1CC725BC00FF8477 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 767786626CCA57A70E55DE88 /* Pods-SwiftCoffeeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SwiftCoffeeTests/Info.plist;
@@ -543,6 +632,7 @@
 		};
 		2153891C1CC725BC00FF8477 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40155196A62148B8598E95DB /* Pods-SwiftCoffeeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SwiftCoffeeTests/Info.plist;

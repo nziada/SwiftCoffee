@@ -8,7 +8,7 @@
         <!--Page View Controller-->
         <scene sceneID="kQ3-36-gpo">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="2d6-jN-lJI" customClass="PageViewController" customModule="SwiftCoffee" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="pagesController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="2d6-jN-lJI" customClass="PageViewController" customModule="SwiftCoffee" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1mp-N6-fLY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-317" y="353"/>
