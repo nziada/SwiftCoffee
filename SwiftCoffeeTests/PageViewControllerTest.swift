@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import Nimble
 @testable import SwiftCoffee
 
 class PageViewControllerTest: XCTestCase {
@@ -21,7 +22,7 @@ class PageViewControllerTest: XCTestCase {
     }
     
     func testPagesAreLoaded(){
-        XCTAssertEqual(vc.orderedViewControllers.count, 2)
+        expect(self.vc.orderedViewControllers.count).to(equal(2))
     }
     
 }

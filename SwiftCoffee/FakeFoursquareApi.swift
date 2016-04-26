@@ -22,7 +22,22 @@ class FakeFoursquareApi: FoursquareProtocol {
         print("about to call fake foursquare explore endpoint")
         
         let value: NSDictionary = [
-            "meta" : ["code" : "200"]
+            "response":[
+                "groups":[
+                    [ "items" : [
+                        ["venue":[
+                            "name":"Starbucks",
+                            "location":[
+                                "address":"1 Toronto St",
+                                "city":"Toronto",
+                                "distance":400,
+                                "lat":34.34,
+                                "lng":-122.20]]]
+                        ]
+                    ]
+                ]
+            ]
+            
         ]
 
         completionHandler(value as NSDictionary, nil)

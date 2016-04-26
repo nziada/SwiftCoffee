@@ -19,20 +19,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     var lastLocation: CLLocation!
     
     var venus = [Venue]()
-    var fs: FoursquareApi
+    var fs: FoursquareProtocol
     
     @IBOutlet weak var refreshButton: UIButton!
     @IBOutlet weak var CurrentLocationButton: UIButton!
-    
-    
-    init(foursquareApi: FoursquareApi!) {
-        if let f = foursquareApi {
-            self.fs = f
-        } else {
-            self.fs = FoursquareApi()
-        }
-        super.init(nibName: nil, bundle: nil)
-    }
     
     init(){
         self.fs = FoursquareApi()
@@ -42,6 +32,14 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     required init(coder aDecoder: (NSCoder!)) {
         self.fs = FoursquareApi()
         super.init(coder: aDecoder)!
+    }
+    
+    func setFoursquareApi(foursquareApi: FoursquareProtocol!) {
+        if let f = foursquareApi {
+            self.fs = f
+        } else {
+            self.fs = FoursquareApi()
+        }
     }
     
     override func viewDidLoad() {
@@ -64,7 +62,6 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
         print("1. present location : \(loc.coordinate.latitude), \(loc.coordinate.longitude)")
         self.lastLocation = loc
-        //getPlacesFromFoursquare(loc)
         fs.getPlacesFromFoursquare(loc){ responseObject, error in
             
             guard error == nil else{

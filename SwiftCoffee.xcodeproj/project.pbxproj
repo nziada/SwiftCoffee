@@ -15,8 +15,9 @@
 		215388F81CC725BC00FF8477 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 215388F61CC725BC00FF8477 /* Main.storyboard */; };
 		215388FA1CC725BC00FF8477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 215388F91CC725BC00FF8477 /* Assets.xcassets */; };
 		215388FD1CC725BC00FF8477 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 215388FB1CC725BC00FF8477 /* LaunchScreen.storyboard */; };
-		215389081CC725BC00FF8477 /* SwiftCoffeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215389071CC725BC00FF8477 /* SwiftCoffeeTests.swift */; };
 		215389131CC725BC00FF8477 /* SwiftCoffeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215389121CC725BC00FF8477 /* SwiftCoffeeUITests.swift */; };
+		21B360CD1CCF19C100D2F95B /* FoursquareApiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B360CB1CCF19C100D2F95B /* FoursquareApiTest.swift */; };
+		21B360CE1CCF19C100D2F95B /* TableViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B360CC1CCF19C100D2F95B /* TableViewControllerTest.swift */; };
 		21BC79461CCB127F00355158 /* FoursquarePlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC79451CCB127F00355158 /* FoursquarePlaces.swift */; };
 		21BC794A1CCB161400355158 /* CoffeeShopTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC79491CCB161400355158 /* CoffeeShopTableCell.swift */; };
 		21BC79501CCB1A8000355158 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC794F1CCB1A8000355158 /* TableViewController.swift */; };
@@ -57,11 +58,12 @@
 		215388FC1CC725BC00FF8477 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		215388FE1CC725BC00FF8477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		215389031CC725BC00FF8477 /* SwiftCoffeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCoffeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		215389071CC725BC00FF8477 /* SwiftCoffeeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCoffeeTests.swift; sourceTree = "<group>"; };
 		215389091CC725BC00FF8477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2153890E1CC725BC00FF8477 /* SwiftCoffeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCoffeeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		215389121CC725BC00FF8477 /* SwiftCoffeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCoffeeUITests.swift; sourceTree = "<group>"; };
 		215389141CC725BC00FF8477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21B360CB1CCF19C100D2F95B /* FoursquareApiTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareApiTest.swift; sourceTree = "<group>"; };
+		21B360CC1CCF19C100D2F95B /* TableViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerTest.swift; sourceTree = "<group>"; };
 		21BC79451CCB127F00355158 /* FoursquarePlaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquarePlaces.swift; sourceTree = "<group>"; };
 		21BC79491CCB161400355158 /* CoffeeShopTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeShopTableCell.swift; sourceTree = "<group>"; };
 		21BC794F1CCB1A8000355158 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -108,14 +110,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2124DF4A1CCDBE32009925AC /* Fakes */ = {
-			isa = PBXGroup;
-			children = (
-				2124DF4B1CCDBE57009925AC /* FakeFoursquareApi.swift */,
-			);
-			name = Fakes;
-			sourceTree = "<group>";
-		};
 		215388E61CC725BC00FF8477 = {
 			isa = PBXGroup;
 			children = (
@@ -155,7 +149,7 @@
 				21BC79451CCB127F00355158 /* FoursquarePlaces.swift */,
 				214983721CC7292B00ACB842 /* Venue.swift */,
 				21BFB8321CCD406E00680D84 /* FoursquareApi.swift */,
-				2124DF4A1CCDBE32009925AC /* Fakes */,
+				2124DF4B1CCDBE57009925AC /* FakeFoursquareApi.swift */,
 			);
 			path = SwiftCoffee;
 			sourceTree = "<group>";
@@ -163,7 +157,8 @@
 		215389061CC725BC00FF8477 /* SwiftCoffeeTests */ = {
 			isa = PBXGroup;
 			children = (
-				215389071CC725BC00FF8477 /* SwiftCoffeeTests.swift */,
+				21B360CB1CCF19C100D2F95B /* FoursquareApiTest.swift */,
+				21B360CC1CCF19C100D2F95B /* TableViewControllerTest.swift */,
 				21BC79571CCD31D800355158 /* MapViewControllerTest.swift */,
 				21BC79551CCD2DD200355158 /* PageViewControllerTest.swift */,
 				215389091CC725BC00FF8477 /* Info.plist */,
@@ -452,8 +447,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				21BC79581CCD31D800355158 /* MapViewControllerTest.swift in Sources */,
-				215389081CC725BC00FF8477 /* SwiftCoffeeTests.swift in Sources */,
+				21B360CD1CCF19C100D2F95B /* FoursquareApiTest.swift in Sources */,
 				21BC79561CCD2DD200355158 /* PageViewControllerTest.swift in Sources */,
+				21B360CE1CCF19C100D2F95B /* TableViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

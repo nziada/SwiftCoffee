@@ -41,10 +41,6 @@ class FoursquareApi: FoursquareProtocol{
             
             switch response.result {
             case .Success(let value):
-                print("====")
-                print(value)
-                print("====")
-                
                 completionHandler(value as? NSDictionary, nil)
             case .Failure(let error):
                 completionHandler(nil, error)
