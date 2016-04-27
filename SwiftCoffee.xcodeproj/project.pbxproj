@@ -16,18 +16,36 @@
 		215388FA1CC725BC00FF8477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 215388F91CC725BC00FF8477 /* Assets.xcassets */; };
 		215388FD1CC725BC00FF8477 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 215388FB1CC725BC00FF8477 /* LaunchScreen.storyboard */; };
 		215389131CC725BC00FF8477 /* SwiftCoffeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215389121CC725BC00FF8477 /* SwiftCoffeeUITests.swift */; };
+		2189ABB81CD0565900DB0922 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 215388F61CC725BC00FF8477 /* Main.storyboard */; };
+		2189ABB91CD0565A00DB0922 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 215388F61CC725BC00FF8477 /* Main.storyboard */; };
+		2189ABBB1CD05A3D00DB0922 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BFB5391CC9C3DA000D28C6 /* PageViewController.swift */; };
+		2189ABBC1CD05A3D00DB0922 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BFB5391CC9C3DA000D28C6 /* PageViewController.swift */; };
+		2189ABBD1CD05A4100DB0922 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215388F41CC725BC00FF8477 /* ViewController.swift */; };
+		2189ABBE1CD05A4100DB0922 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215388F41CC725BC00FF8477 /* ViewController.swift */; };
+		2189ABBF1CD05A4400DB0922 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC794F1CCB1A8000355158 /* TableViewController.swift */; };
+		2189ABC01CD05A4500DB0922 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC794F1CCB1A8000355158 /* TableViewController.swift */; };
+		2189ABC11CD05A4A00DB0922 /* CoffeeShopTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC79491CCB161400355158 /* CoffeeShopTableCell.swift */; };
+		2189ABC21CD05A4A00DB0922 /* CoffeeShopTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC79491CCB161400355158 /* CoffeeShopTableCell.swift */; };
+		2189ABC31CD05A4D00DB0922 /* FoursquarePlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC79451CCB127F00355158 /* FoursquarePlaces.swift */; };
+		2189ABC41CD05A4E00DB0922 /* FoursquarePlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC79451CCB127F00355158 /* FoursquarePlaces.swift */; };
+		2189ABC51CD05A5100DB0922 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214983721CC7292B00ACB842 /* Venue.swift */; };
+		2189ABC61CD05A5200DB0922 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214983721CC7292B00ACB842 /* Venue.swift */; };
+		2189ABC71CD05A5500DB0922 /* FoursquareApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BFB8321CCD406E00680D84 /* FoursquareApi.swift */; };
+		2189ABC81CD05A5600DB0922 /* FoursquareApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BFB8321CCD406E00680D84 /* FoursquareApi.swift */; };
+		2189ABC91CD05A5900DB0922 /* FakeFoursquareApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2124DF4B1CCDBE57009925AC /* FakeFoursquareApi.swift */; };
+		2189ABCA1CD05A5A00DB0922 /* FakeFoursquareApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2124DF4B1CCDBE57009925AC /* FakeFoursquareApi.swift */; };
+		2189ABCC1CD065D300DB0922 /* UIElementsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2189ABCB1CD065D300DB0922 /* UIElementsTests.swift */; };
 		21B360CD1CCF19C100D2F95B /* FoursquareApiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B360CB1CCF19C100D2F95B /* FoursquareApiTest.swift */; };
-		21B360CE1CCF19C100D2F95B /* TableViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B360CC1CCF19C100D2F95B /* TableViewControllerTest.swift */; };
 		21BC79461CCB127F00355158 /* FoursquarePlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC79451CCB127F00355158 /* FoursquarePlaces.swift */; };
 		21BC794A1CCB161400355158 /* CoffeeShopTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC79491CCB161400355158 /* CoffeeShopTableCell.swift */; };
 		21BC79501CCB1A8000355158 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC794F1CCB1A8000355158 /* TableViewController.swift */; };
 		21BC79531CCBEB2900355158 /* Near Me Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 21BC79511CCBEB2900355158 /* Near Me Filled.png */; };
 		21BC79541CCBEB2900355158 /* Restart Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 21BC79521CCBEB2900355158 /* Restart Filled.png */; };
 		21BC79561CCD2DD200355158 /* PageViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC79551CCD2DD200355158 /* PageViewControllerTest.swift */; };
-		21BC79581CCD31D800355158 /* MapViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC79571CCD31D800355158 /* MapViewControllerTest.swift */; };
 		21BFB53A1CC9C3DA000D28C6 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BFB5391CC9C3DA000D28C6 /* PageViewController.swift */; };
 		21BFB8331CCD406E00680D84 /* FoursquareApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BFB8321CCD406E00680D84 /* FoursquareApi.swift */; };
 		361D6D52C03D4E086EA94C85 /* Pods_SwiftCoffeeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9248DEA90141D2EF2CA4CE08 /* Pods_SwiftCoffeeTests.framework */; };
+		A790053F2ADAD958BE028937 /* Pods_SwiftCoffeeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FF60DA8D6CB3A362428D09 /* Pods_SwiftCoffeeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,15 +80,14 @@
 		2153890E1CC725BC00FF8477 /* SwiftCoffeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCoffeeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		215389121CC725BC00FF8477 /* SwiftCoffeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCoffeeUITests.swift; sourceTree = "<group>"; };
 		215389141CC725BC00FF8477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2189ABCB1CD065D300DB0922 /* UIElementsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIElementsTests.swift; path = SwiftCoffeeUITests/UIElementsTests.swift; sourceTree = SOURCE_ROOT; };
 		21B360CB1CCF19C100D2F95B /* FoursquareApiTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareApiTest.swift; sourceTree = "<group>"; };
-		21B360CC1CCF19C100D2F95B /* TableViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerTest.swift; sourceTree = "<group>"; };
 		21BC79451CCB127F00355158 /* FoursquarePlaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquarePlaces.swift; sourceTree = "<group>"; };
 		21BC79491CCB161400355158 /* CoffeeShopTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeShopTableCell.swift; sourceTree = "<group>"; };
 		21BC794F1CCB1A8000355158 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		21BC79511CCBEB2900355158 /* Near Me Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Near Me Filled.png"; sourceTree = "<group>"; };
 		21BC79521CCBEB2900355158 /* Restart Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Restart Filled.png"; sourceTree = "<group>"; };
 		21BC79551CCD2DD200355158 /* PageViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewControllerTest.swift; sourceTree = "<group>"; };
-		21BC79571CCD31D800355158 /* MapViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewControllerTest.swift; sourceTree = "<group>"; };
 		21BFB5391CC9C3DA000D28C6 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		21BFB8321CCD406E00680D84 /* FoursquareApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareApi.swift; sourceTree = "<group>"; };
 		40155196A62148B8598E95DB /* Pods-SwiftCoffeeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCoffeeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCoffeeTests/Pods-SwiftCoffeeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,9 +95,12 @@
 		4655181910D72730BA664EAD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		64E55C44DABD399D7544E14B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		767786626CCA57A70E55DE88 /* Pods-SwiftCoffeeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCoffeeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCoffeeTests/Pods-SwiftCoffeeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		79FF60DA8D6CB3A362428D09 /* Pods_SwiftCoffeeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftCoffeeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83179FA26D1648034AFBB8AB /* Pods-SwiftCoffeeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCoffeeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCoffeeUITests/Pods-SwiftCoffeeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8B6A0F412F8D07BA1BC1FE75 /* Pods-SwiftCoffee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCoffee.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCoffee/Pods-SwiftCoffee.release.xcconfig"; sourceTree = "<group>"; };
 		9248DEA90141D2EF2CA4CE08 /* Pods_SwiftCoffeeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftCoffeeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB19BFF489FD3316A5BC949C /* Pods-SwiftCoffee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCoffee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCoffee/Pods-SwiftCoffee.debug.xcconfig"; sourceTree = "<group>"; };
+		FDAD905821BCF478003B7EDF /* Pods-SwiftCoffeeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCoffeeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCoffeeUITests/Pods-SwiftCoffeeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A790053F2ADAD958BE028937 /* Pods_SwiftCoffeeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,8 +179,6 @@
 			isa = PBXGroup;
 			children = (
 				21B360CB1CCF19C100D2F95B /* FoursquareApiTest.swift */,
-				21B360CC1CCF19C100D2F95B /* TableViewControllerTest.swift */,
-				21BC79571CCD31D800355158 /* MapViewControllerTest.swift */,
 				21BC79551CCD2DD200355158 /* PageViewControllerTest.swift */,
 				215389091CC725BC00FF8477 /* Info.plist */,
 			);
@@ -169,6 +188,7 @@
 		215389111CC725BC00FF8477 /* SwiftCoffeeUITests */ = {
 			isa = PBXGroup;
 			children = (
+				2189ABCB1CD065D300DB0922 /* UIElementsTests.swift */,
 				215389121CC725BC00FF8477 /* SwiftCoffeeUITests.swift */,
 				215389141CC725BC00FF8477 /* Info.plist */,
 			);
@@ -180,6 +200,7 @@
 			children = (
 				4322EC7A4A29D0BC265BBC78 /* Pods_SwiftCoffee.framework */,
 				9248DEA90141D2EF2CA4CE08 /* Pods_SwiftCoffeeTests.framework */,
+				79FF60DA8D6CB3A362428D09 /* Pods_SwiftCoffeeUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -193,6 +214,8 @@
 				40155196A62148B8598E95DB /* Pods-SwiftCoffeeTests.release.xcconfig */,
 				BB19BFF489FD3316A5BC949C /* Pods-SwiftCoffee.debug.xcconfig */,
 				8B6A0F412F8D07BA1BC1FE75 /* Pods-SwiftCoffee.release.xcconfig */,
+				FDAD905821BCF478003B7EDF /* Pods-SwiftCoffeeUITests.debug.xcconfig */,
+				83179FA26D1648034AFBB8AB /* Pods-SwiftCoffeeUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -245,9 +268,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2153891D1CC725BC00FF8477 /* Build configuration list for PBXNativeTarget "SwiftCoffeeUITests" */;
 			buildPhases = (
+				747423D879DE8652D1A63DC0 /* Check Pods Manifest.lock */,
 				2153890A1CC725BC00FF8477 /* Sources */,
 				2153890B1CC725BC00FF8477 /* Frameworks */,
 				2153890C1CC725BC00FF8477 /* Resources */,
+				AF05303C18597ABFB16B2ABC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -320,6 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2189ABB81CD0565900DB0922 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +353,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2189ABB91CD0565A00DB0922 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +403,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		747423D879DE8652D1A63DC0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AF05303C18597ABFB16B2ABC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftCoffeeUITests/Pods-SwiftCoffeeUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BA44C6BC8DD3049CB2EFAF63 /* Embed Pods Frameworks */ = {
@@ -446,10 +503,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21BC79581CCD31D800355158 /* MapViewControllerTest.swift in Sources */,
+				2189ABBD1CD05A4100DB0922 /* ViewController.swift in Sources */,
+				2189ABC61CD05A5200DB0922 /* Venue.swift in Sources */,
+				2189ABC71CD05A5500DB0922 /* FoursquareApi.swift in Sources */,
+				2189ABBF1CD05A4400DB0922 /* TableViewController.swift in Sources */,
+				2189ABBB1CD05A3D00DB0922 /* PageViewController.swift in Sources */,
 				21B360CD1CCF19C100D2F95B /* FoursquareApiTest.swift in Sources */,
 				21BC79561CCD2DD200355158 /* PageViewControllerTest.swift in Sources */,
-				21B360CE1CCF19C100D2F95B /* TableViewControllerTest.swift in Sources */,
+				2189ABC91CD05A5900DB0922 /* FakeFoursquareApi.swift in Sources */,
+				2189ABC11CD05A4A00DB0922 /* CoffeeShopTableCell.swift in Sources */,
+				2189ABC31CD05A4D00DB0922 /* FoursquarePlaces.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,7 +520,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2189ABCC1CD065D300DB0922 /* UIElementsTests.swift in Sources */,
+				2189ABBE1CD05A4100DB0922 /* ViewController.swift in Sources */,
+				2189ABC21CD05A4A00DB0922 /* CoffeeShopTableCell.swift in Sources */,
+				2189ABC41CD05A4E00DB0922 /* FoursquarePlaces.swift in Sources */,
+				2189ABC51CD05A5100DB0922 /* Venue.swift in Sources */,
 				215389131CC725BC00FF8477 /* SwiftCoffeeUITests.swift in Sources */,
+				2189ABC81CD05A5600DB0922 /* FoursquareApi.swift in Sources */,
+				2189ABBC1CD05A3D00DB0922 /* PageViewController.swift in Sources */,
+				2189ABC01CD05A4500DB0922 /* TableViewController.swift in Sources */,
+				2189ABCA1CD05A5A00DB0922 /* FakeFoursquareApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +589,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -562,6 +635,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -637,6 +711,7 @@
 		};
 		2153891E1CC725BC00FF8477 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDAD905821BCF478003B7EDF /* Pods-SwiftCoffeeUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SwiftCoffeeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -648,6 +723,7 @@
 		};
 		2153891F1CC725BC00FF8477 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83179FA26D1648034AFBB8AB /* Pods-SwiftCoffeeUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SwiftCoffeeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

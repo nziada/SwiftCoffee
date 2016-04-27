@@ -80,7 +80,9 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                 annotation.title = v.name
                 annotation.subtitle = v.address
                 
-                self.map.addAnnotation(annotation)
+                if let m = self.map {
+                    m.addAnnotation(annotation)
+                }
             }
             
             return

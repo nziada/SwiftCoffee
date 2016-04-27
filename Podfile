@@ -10,3 +10,7 @@ end
 target 'SwiftCoffeeTests' do
     pod 'Nimble', '~> 4.0.0'
 end
+
+target 'SwiftCoffeeUITests' do
+    pod 'Nimble', '~> 4.0.0'
+end

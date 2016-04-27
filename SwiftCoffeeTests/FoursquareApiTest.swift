@@ -18,9 +18,11 @@ class FoursquareApiTest: XCTestCase {
         super.setUp()
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: NSBundle(forClass: self.dynamicType))
         vc = storyboard.instantiateViewControllerWithIdentifier("mapView") as! ViewController
+        print("-------------------------------------")
+
         let fake = FakeFoursquareApi()
         vc.setFoursquareApi(fake)
-        vc.loadView()
+        vc.callFoursquare(vc.locationManager.location!)
     }
     
     func testFoursquareIsCalledOnLoad(){
